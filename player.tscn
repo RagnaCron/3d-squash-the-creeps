@@ -8,7 +8,6 @@ radius = 0.8
 [node name="Player" type="CharacterBody3D" unique_id=1110211444]
 
 [node name="Pivot" type="Node3D" parent="." unique_id=267474398]
-visible = false
 
 [node name="Character" parent="Pivot" unique_id=1368395010 instance=ExtResource("1_4flbx")]
 
