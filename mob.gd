@@ -7,7 +7,7 @@ extends CharacterBody3D
 
 
 # This function will be called from Main scene.
-func initialze(start_position, player_position):
+func initialize(start_position, player_position):
 	# We position the mob by placing it at start_position
 	# and rotate it towards player_position, so it looks at the player.
 	look_at_from_position(start_position, player_position, Vector3.UP)
