@@ -75,10 +75,11 @@ mesh = SubResource("CylinderMesh_1bvp3")
 curve = SubResource("Curve3D_lquwl")
 
 [node name="SpawnLocation" type="PathFollow3D" parent="SpawnPath" unique_id=540188041]
-transform = Transform3D(0.007148397, 0, -0.9999741, 0, 1, 0, 0.9999741, 0, 0.007148397, -13.453669, 0, -14.481052)
+transform = Transform3D(0.0071483958, 0, -0.9999739, 0, 1, 0, 0.9999739, 0, 0.0071483958, -13.453669, 0, -14.481052)
 
 [node name="MobTimer" type="Timer" parent="." unique_id=654695787]
 wait_time = 0.5
 autostart = true
 
+[connection signal="hit" from="Player" to="." method="_on_player_hit"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
